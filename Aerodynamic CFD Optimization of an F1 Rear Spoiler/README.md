@@ -18,28 +18,20 @@ that dominate real F1 aerodynamics — tip vortices, spanwise flow, wake interac
 front and rear elements. Knowing what your model is throwing away is part of using it
 properly.
 
-## Method
+## Setup
 
-Aerodynamic flow is governed by the Navier–Stokes equations:
+Turbulence was handled with k–ε and k–ω SST models, and second-order upwind discretisation
+was used to resolve gradients more accurately.
 
-$$\nabla \cdot u = 0$$
-$$\rho\left(\frac{\partial u}{\partial t} + u \cdot \nabla u\right) = -\nabla p + \mu \nabla^2 u$$
-
-CFD solves these numerically over a discretised domain, dividing the flow into finite volumes
-and solving in each cell. F1 aerodynamics runs at high Reynolds number, so turbulence
-modelling is required — k–ε and k–ω SST were the models considered.
-
-Second-order upwind discretisation was used to capture gradients more accurately.
 Boundary conditions matter a lot for realism here: velocity inlet, pressure outlet, and a
-moving ground to represent the car travelling over a road rather than sitting in a wind
-tunnel with a stationary floor.
-
-Aerodynamic forces come from integrating pressure and shear stress over the car surface.
+moving ground so the car is travelling over a road rather than sitting in a wind tunnel with
+a stationary floor. Aerodynamic forces come from integrating pressure and shear stress over
+the car surface.
 
 ## Files
 
 - `CFD Analysis of Aerodynamic Performance of an F1 Car with Rear Spoiler Angle Optimization.pdf`
-  — full presentation: theory, setup, results across all four configurations
+  — full presentation: setup, results across all four configurations
 - `v.mp4`, `v (1).mp4`, `v_car_a.mp4`, `velo.mp4` — flow visualisations from the simulations
 
 ## Tools

@@ -20,9 +20,9 @@ Bombay Microfactory to ASTM D638 Type I dog-bone geometry:
 |---|---|---|
 | NH | 0 | baseline, no hole |
 | 1H | 1 | single hole |
-| 2H2, 2H4 | 2 | collinear, $s/d$ = 2 and 4 |
-| 3H2, 3H4 | 3 | collinear, $s/d$ = 2 and 4 |
-| 3H2S, 3H4S | 3 | staggered, $s/d$ = 2 and 4 |
+| 2H2, 2H4 | 2 | collinear, s/d = 2 and 4 |
+| 3H2, 3H4 | 3 | collinear, s/d = 2 and 4 |
+| 3H2S, 3H4S | 3 | staggered, s/d = 2 and 4 |
 
 Each specimen got a white base coat and a black speckle pattern for DIC tracking, then was
 loaded uniaxially in tension on a UTM under displacement control with images captured
@@ -35,20 +35,19 @@ subset level for these specimens, so instead I defined regions of interest manua
 recorded the average strain in each: annular zones around every hole, the ligaments between
 adjacent holes (vertical L1, diagonal L2), and far-field zones.
 
-Two normalised metrics, both referenced to each specimen's own far-field strain so that
-differences in load level between specimens drop out:
-
-$$K_\varepsilon = \frac{\varepsilon_{\text{ann}}}{\varepsilon_{\text{FF}}}, \qquad I = \frac{\varepsilon_{\text{lig}}}{\varepsilon_{\text{FF}}}$$
+Results were reported as two normalised metrics — a strain concentration factor from the
+annular zones, and an interaction index from the ligaments — both referenced to each
+specimen's own far-field strain so that differences in load level between specimens drop
+out.
 
 ## Results
 
 **Closer holes interact much more strongly.** For the three-hole collinear case, normalised
-ligament strain nearly doubled going from $s/d = 4$ to $s/d = 2$ ($I$: 0.395 → 0.757).
+ligament strain nearly doubled going from s/d = 4 to s/d = 2 (0.395 to 0.757).
 
-**The middle hole gets shielded.** In the collinear three-hole array at $s/d = 2$, the centre
-hole showed *lower* annular concentration ($K_\varepsilon = 0.711$) than the outer holes
-($K_\varepsilon = 1.238$). Its neighbours take the load. This matches classical analytical
-predictions.
+**The middle hole gets shielded.** In the collinear three-hole array at s/d = 2, the centre
+hole showed *lower* annular concentration (0.711) than the outer holes (1.238). Its
+neighbours take the load. This matches classical analytical predictions.
 
 **Staggering helps.** Offsetting the centre hole laterally cut vertical ligament interaction
 by about 24% compared to the collinear case at the same spacing.

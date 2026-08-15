@@ -63,7 +63,6 @@ That last one is a negative result and it's the most useful thing in the project
   engineering, both MLP stages, regression, plots
 - `ME228_Presentation.pdf` — final presentation
 - `ME228_Progress_Report.pdf` — mid-project progress report
-- `PIPELINE_NOTES.md` — my working notes, in the order I built things
 
 ## Tools
 
