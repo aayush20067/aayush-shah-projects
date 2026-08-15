@@ -57,7 +57,8 @@ can't reach.
 - `RoboDK Training Certificate ... .pdf` — RoboDK training, 6 hours
 
 There's a video walkthrough of the simulation and the cut that goes with the report. It's
-1.4 GB so it's hosted outside the repo. *(link to follow)*
+1.4 GB so it's hosted on Drive rather than in the repo:
+[watch it here](https://drive.google.com/file/d/1Vo7beFoPX2QByMMl2xNkSvdkU8L7ZpKQ/view).
 
 ## Hardware and software
 
